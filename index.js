@@ -26,7 +26,9 @@ const getLocation = async (searchInput) => {
 		const locationData = await response.json();
 console.log(locationData)
 dashboardContainer.innerHTML=`<h1 class="display-5 fw-bold"> ${locationData.name} ${dayjs.unix(locationData.dt).format("MM/DD/YYYY")} </h1>
-<p class="col-md-8 fs-4">Temp: ${locationData.main.temp} Wind: ${locationData.wind.speed} Humidity: ${locationData.main.humidity}</p>`
+<p class="col-md-8 fs-4">The current temperature is ${locationData.main.temp} degrees Fahrenheit</p>
+<p class="col-md-8 fs-4">The current wind speed is ${locationData.wind.speed}mph </p>
+<p class="col-md-8 fs-4">The current humidity is ${locationData.main.humidity}% </p>`
 		//return the json data
 		return locationData;
 	} catch (error) {
@@ -52,13 +54,13 @@ const displayData = (weatherData) => {
 	//one of the easierst ways to display this day is to use a template literal to construct raw HTML and then apply it as the innerHTML of the target container
 	console.log(weatherData);
 	targetContainer.innerHTML = `
- Exampole Setup
+ Example Setup
   <div class="card">
 
     <div class="card-body">
       <h5 class="card-title">Current Weather</h5>
       <img src="https://openweathermap.org/img/wn/${weatherData.current.weather[0].icon}@2x.png" alt="weather icon">
-      <p class="card-text">The current temperature is ${weatherData.current.temp} degrees Farenheit</p>
+      <p class="card-text">The current temperature is ${weatherData.current.temp} degrees Fahrenheit</p>
       <p class="card-text">The current humidity is ${weatherData.current.humidity}%</p>
       <p class="card-text">The current wind speed is ${weatherData.current.wind_speed} mph</p>
       <p class="card-text">The current UV index is ${weatherData.current.uvi}</p>
