@@ -1,14 +1,11 @@
 # Mod-6-Weather-Dashboard
 
-# Acceptance Criteria
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the the wind speed
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
+# Description 
+When you enter in a city you can find out the current weather using a server-side API. Descign is by using Bootstrap and the API is OpenWeather. 
 
-![server-side-apis-homework-demo](https://user-images.githubusercontent.com/120152523/235010462-b72e11d2-b11b-4a82-9672-e13f225e9a6e.png)
+# Installation 
+Access application through github by deploying index.html, style.css, javascript, and README.md
+
+# Links
+Link to depolyed application: https://nouriyin.github.io/Mod-6-Weather-Dashboard/
+Link to GitHub Repo: https://github.com/nouriyin/Mod-6-Weather-Dashboard
